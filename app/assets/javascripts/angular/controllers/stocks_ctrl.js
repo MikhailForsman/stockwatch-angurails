@@ -1,3 +1,3 @@
-app.controller('StocksCtrl', ['$scope', '$resource', function($scope, $resource) {
-   $scope.stocks = Stock.all();
+app.controller('StocksCtrl', ['$scope', 'Stock', function($scope, Stock) {
+   $scope.stocks = Stock.all();   //bind all stocks to view
 }]);
